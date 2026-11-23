@@ -31,7 +31,7 @@ S11. Supuesto explícito: `tests/fixtures/sucio.xlsx` ya existe; `tests/fixtures
 ## Tasks
 
 - T1 (S1, S7, S9, S10) — inline — DONE — Cimientos: git init en rama feature, `pyproject.toml` con dependencias, `domain.py` como contrato único, `normalization.py` con dos perfiles e idempotencia, `reading.py` defensivo, y sus tests. Commit `5bdb3f1` (376 líneas). RED observado en `ImportError` de `hygiene_trace` y `read_supplier`; GREEN con 15 tests.
-- T2 (S3, S4, S5, S6, S8, S9, S11) — inline — DONE — Horquetilla vertical: `catalog.py`, `matching.py`, `parsing.py`, `rules.py`, `engine.py`, `report.py`, `cli.py` y `__main__.py`, con la fixture mínima, hasta correr la CLI y generar las tres salidas. Suite: 28 passed (`python3 -m pytest -q`). Review guard: 759 líneas > 400 con `ask-on-risk`; el usuario aprobó `size:exception` para seguir en un solo PR. Commit `bc7fe9d`.
+- T2 (S3, S4, S5, S6, S8, S9, S11) — inline — DONE — Horquetilla vertical: `catalog.py`, `matching.py`, `parsing.py`, `rules.py`, `engine.py`, `report.py`, `cli.py` y `__main__.py`, con la fixture mínima, hasta correr la CLI y generar las tres salidas. Suite: 28 passed (`python3 -m pytest -q`). Review guard: 759 líneas > 400 con `ask-on-risk`; el usuario aprobó `size:exception` para seguir en un solo PR. Commit `5671b0d`.
 - T3 (S7, S8, S10) — inline — Endurecer: locale y `Decimal`, casos ambiguos, duplicados, conflictos de precio, devolución al proveedor y CSV/JSON como contrato. Commit de unidad.
 
 ## Log
