@@ -1,0 +1,21 @@
+proveedor: ejemplo
+header_row: 3
+sheet: ListaPrecios
+column_map:
+  producto: productos
+  categoria: categoria
+  precio: precio
+locale: es_AR
+catalogo: tests/fixtures/catalogo.xlsx
+catalog_sheet: Catalogo
+catalog_column_map:
+  categoria: categoria
+  alias: alias
+reglas_activas:
+  - PRODUCT_NON_EMPTY
+  - PRICE_FORMAT
+  - PRICE_POSITIVE
+  - CATEGORY_NON_EMPTY
+  - CATEGORY_IN_CATALOG
+  - DUPLICATE_ROW
+  - PRICE_CONFLICT
