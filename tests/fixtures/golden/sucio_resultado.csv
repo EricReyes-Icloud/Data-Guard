@@ -1,0 +1,16 @@
+fila,estado,descartada,producto,categoria,categoria_original,precio,higiene,campo,regla_id,severidad,valor_original,valor_sugerido,score,candidatos
+4,aprobado,false,PEGAMENTO BLANCO,Adhesivos,ADHESIVOS,1234.56,"[""trim"",""casefold"",""trim"",""casefold""]",,,,,,,[]
+5,aprobado,false,Pegamento Extra,Adhesivos,adesivos,10.50,"[""casefold""]",,,,,,,[]
+6,rechazado,false,Cafe,Condimentos,Condimntos,2500.00,"[""casefold"",""casefold""]",categoria,CATEGORY_IN_CATALOG,correctible,Condimntos,Condimentos,95.23809523809523,[]
+6,rechazado,false,Cafe,Condimentos,Condimntos,2500.00,"[""casefold"",""casefold""]",fila,PRICE_CONFLICT,critical,Cafe,,,[]
+7,sugerido,false,Detergente,Cemeto,Cemeto,800.00,"[""casefold"",""casefold""]",categoria,CATEGORY_IN_CATALOG,correctible,Cemeto,,92.3076923076923,"[""Cemento"",""Cementos""]"
+8,rechazado,false,Taladro,Maquinaria,Maquinaria,150.00,"[""casefold"",""casefold""]",categoria,CATEGORY_IN_CATALOG,critical,Maquinaria,,42.10526315789473,[]
+9,rechazado,false,,Papel,Papel,100.00,"[""placeholder"",""casefold""]",producto,PRODUCT_NON_EMPTY,critical,,,,[]
+10,rechazado,false,Cuaderno,,,50.00,"[""casefold"",""placeholder""]",categoria,CATEGORY_NON_EMPTY,critical,,,,[]
+11,rechazado,false,Regla,Papel,Papel,,"[""casefold"",""casefold""]",precio,PRICE_FORMAT,critical,ABC,,,[]
+12,rechazado,false,Goma,Papel,Papel,0.00,"[""casefold"",""casefold""]",precio,PRICE_POSITIVE,critical,0,,,[]
+13,rechazado,false,,Papel,Papel,12.00,"[""placeholder"",""casefold""]",producto,PRODUCT_NON_EMPTY,critical,N/A,,,[]
+14,rechazado,false,Clavo,,,9.00,"[""casefold"",""placeholder""]",categoria,CATEGORY_NON_EMPTY,critical,-,,,[]
+15,rechazado,false,CAFE,Condimentos,Condimentos,1000.00,"[""casefold"",""casefold""]",fila,PRICE_CONFLICT,critical,CAFE,,,[]
+16,rechazado,false,CAFE,Condimentos,Condimentos,1100.00,"[""trim"",""casefold"",""casefold""]",fila,PRICE_CONFLICT,critical,CAFE ,,,[]
+17,rechazado,true,Pegamento Extra,Adhesivos,adesivos,10.50,"[""casefold""]",fila,DUPLICATE_ROW,warning,Pegamento Extra,,,[]

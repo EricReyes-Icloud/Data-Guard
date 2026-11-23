@@ -1,0 +1,341 @@
+{
+  "summary": {
+    "total_rows": 14,
+    "aprobados": 2,
+    "sugeridos": 1,
+    "rechazados": 10,
+    "descartados": 1,
+    "avisos_lectura": []
+  },
+  "rows": [
+    {
+      "fila": 4,
+      "estado": "aprobado",
+      "descartada": false,
+      "producto": "PEGAMENTO BLANCO",
+      "categoria": "Adhesivos",
+      "categoria_original": "ADHESIVOS",
+      "precio": "1234.56",
+      "higiene": [
+        "trim",
+        "casefold",
+        "trim",
+        "casefold"
+      ],
+      "hallazgos": []
+    },
+    {
+      "fila": 5,
+      "estado": "aprobado",
+      "descartada": false,
+      "producto": "Pegamento Extra",
+      "categoria": "Adhesivos",
+      "categoria_original": "adesivos",
+      "precio": "10.50",
+      "higiene": [
+        "casefold"
+      ],
+      "hallazgos": []
+    },
+    {
+      "fila": 6,
+      "estado": "rechazado",
+      "descartada": false,
+      "producto": "Cafe",
+      "categoria": "Condimentos",
+      "categoria_original": "Condimntos",
+      "precio": "2500.00",
+      "higiene": [
+        "casefold",
+        "casefold"
+      ],
+      "hallazgos": [
+        {
+          "campo": "categoria",
+          "regla_id": "CATEGORY_IN_CATALOG",
+          "severidad": "correctible",
+          "valor_original": "Condimntos",
+          "valor_sugerido": "Condimentos",
+          "score": 95.23809523809523,
+          "candidatos": []
+        },
+        {
+          "campo": "fila",
+          "regla_id": "PRICE_CONFLICT",
+          "severidad": "critical",
+          "valor_original": "Cafe",
+          "valor_sugerido": null,
+          "score": null,
+          "candidatos": []
+        }
+      ]
+    },
+    {
+      "fila": 7,
+      "estado": "sugerido",
+      "descartada": false,
+      "producto": "Detergente",
+      "categoria": "Cemeto",
+      "categoria_original": "Cemeto",
+      "precio": "800.00",
+      "higiene": [
+        "casefold",
+        "casefold"
+      ],
+      "hallazgos": [
+        {
+          "campo": "categoria",
+          "regla_id": "CATEGORY_IN_CATALOG",
+          "severidad": "correctible",
+          "valor_original": "Cemeto",
+          "valor_sugerido": null,
+          "score": 92.3076923076923,
+          "candidatos": [
+            "Cemento",
+            "Cementos"
+          ]
+        }
+      ]
+    },
+    {
+      "fila": 8,
+      "estado": "rechazado",
+      "descartada": false,
+      "producto": "Taladro",
+      "categoria": "Maquinaria",
+      "categoria_original": "Maquinaria",
+      "precio": "150.00",
+      "higiene": [
+        "casefold",
+        "casefold"
+      ],
+      "hallazgos": [
+        {
+          "campo": "categoria",
+          "regla_id": "CATEGORY_IN_CATALOG",
+          "severidad": "critical",
+          "valor_original": "Maquinaria",
+          "valor_sugerido": null,
+          "score": 42.10526315789473,
+          "candidatos": []
+        }
+      ]
+    },
+    {
+      "fila": 9,
+      "estado": "rechazado",
+      "descartada": false,
+      "producto": "",
+      "categoria": "Papel",
+      "categoria_original": "Papel",
+      "precio": "100.00",
+      "higiene": [
+        "placeholder",
+        "casefold"
+      ],
+      "hallazgos": [
+        {
+          "campo": "producto",
+          "regla_id": "PRODUCT_NON_EMPTY",
+          "severidad": "critical",
+          "valor_original": "",
+          "valor_sugerido": null,
+          "score": null,
+          "candidatos": []
+        }
+      ]
+    },
+    {
+      "fila": 10,
+      "estado": "rechazado",
+      "descartada": false,
+      "producto": "Cuaderno",
+      "categoria": "",
+      "categoria_original": "",
+      "precio": "50.00",
+      "higiene": [
+        "casefold",
+        "placeholder"
+      ],
+      "hallazgos": [
+        {
+          "campo": "categoria",
+          "regla_id": "CATEGORY_NON_EMPTY",
+          "severidad": "critical",
+          "valor_original": "",
+          "valor_sugerido": null,
+          "score": null,
+          "candidatos": []
+        }
+      ]
+    },
+    {
+      "fila": 11,
+      "estado": "rechazado",
+      "descartada": false,
+      "producto": "Regla",
+      "categoria": "Papel",
+      "categoria_original": "Papel",
+      "precio": null,
+      "higiene": [
+        "casefold",
+        "casefold"
+      ],
+      "hallazgos": [
+        {
+          "campo": "precio",
+          "regla_id": "PRICE_FORMAT",
+          "severidad": "critical",
+          "valor_original": "ABC",
+          "valor_sugerido": null,
+          "score": null,
+          "candidatos": []
+        }
+      ]
+    },
+    {
+      "fila": 12,
+      "estado": "rechazado",
+      "descartada": false,
+      "producto": "Goma",
+      "categoria": "Papel",
+      "categoria_original": "Papel",
+      "precio": "0.00",
+      "higiene": [
+        "casefold",
+        "casefold"
+      ],
+      "hallazgos": [
+        {
+          "campo": "precio",
+          "regla_id": "PRICE_POSITIVE",
+          "severidad": "critical",
+          "valor_original": "0",
+          "valor_sugerido": null,
+          "score": null,
+          "candidatos": []
+        }
+      ]
+    },
+    {
+      "fila": 13,
+      "estado": "rechazado",
+      "descartada": false,
+      "producto": "",
+      "categoria": "Papel",
+      "categoria_original": "Papel",
+      "precio": "12.00",
+      "higiene": [
+        "placeholder",
+        "casefold"
+      ],
+      "hallazgos": [
+        {
+          "campo": "producto",
+          "regla_id": "PRODUCT_NON_EMPTY",
+          "severidad": "critical",
+          "valor_original": "N/A",
+          "valor_sugerido": null,
+          "score": null,
+          "candidatos": []
+        }
+      ]
+    },
+    {
+      "fila": 14,
+      "estado": "rechazado",
+      "descartada": false,
+      "producto": "Clavo",
+      "categoria": "",
+      "categoria_original": "",
+      "precio": "9.00",
+      "higiene": [
+        "casefold",
+        "placeholder"
+      ],
+      "hallazgos": [
+        {
+          "campo": "categoria",
+          "regla_id": "CATEGORY_NON_EMPTY",
+          "severidad": "critical",
+          "valor_original": "-",
+          "valor_sugerido": null,
+          "score": null,
+          "candidatos": []
+        }
+      ]
+    },
+    {
+      "fila": 15,
+      "estado": "rechazado",
+      "descartada": false,
+      "producto": "CAFE",
+      "categoria": "Condimentos",
+      "categoria_original": "Condimentos",
+      "precio": "1000.00",
+      "higiene": [
+        "casefold",
+        "casefold"
+      ],
+      "hallazgos": [
+        {
+          "campo": "fila",
+          "regla_id": "PRICE_CONFLICT",
+          "severidad": "critical",
+          "valor_original": "CAFE",
+          "valor_sugerido": null,
+          "score": null,
+          "candidatos": []
+        }
+      ]
+    },
+    {
+      "fila": 16,
+      "estado": "rechazado",
+      "descartada": false,
+      "producto": "CAFE",
+      "categoria": "Condimentos",
+      "categoria_original": "Condimentos",
+      "precio": "1100.00",
+      "higiene": [
+        "trim",
+        "casefold",
+        "casefold"
+      ],
+      "hallazgos": [
+        {
+          "campo": "fila",
+          "regla_id": "PRICE_CONFLICT",
+          "severidad": "critical",
+          "valor_original": "CAFE ",
+          "valor_sugerido": null,
+          "score": null,
+          "candidatos": []
+        }
+      ]
+    },
+    {
+      "fila": 17,
+      "estado": "rechazado",
+      "descartada": true,
+      "producto": "Pegamento Extra",
+      "categoria": "Adhesivos",
+      "categoria_original": "adesivos",
+      "precio": "10.50",
+      "higiene": [
+        "casefold"
+      ],
+      "hallazgos": [
+        {
+          "campo": "fila",
+          "regla_id": "DUPLICATE_ROW",
+          "severidad": "warning",
+          "valor_original": "Pegamento Extra",
+          "valor_sugerido": null,
+          "score": null,
+          "candidatos": []
+        }
+      ]
+    }
+  ]
+}

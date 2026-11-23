@@ -105,7 +105,7 @@ def validate(
             "precio_raw_norm": precio_raw_norm,
             "precio": precio,
             "precio_parse_error": precio_error,
-            "higiene": hygiene_trace(producto_raw) + hygiene_trace(categoria_raw) + hygiene_trace(precio_raw),
+            "higiene": hygiene_trace(producto_raw) + hygiene_trace(categoria_raw),
             "category_match": match,
             "category_match_kind": match.kind if match else "no_match",
             "is_duplicate": False,
@@ -156,15 +156,15 @@ def validate(
                     ))
                     continue
                 if kind == "ambiguous":
-                    candidates = ", ".join(
+                    candidatos = tuple(
                         catalog.display_names.get(c, c) for c, _ in match.candidates
                     )
                     hallazgos.append(Hallazgo(
                         fila=row["numero"], campo="categoria", regla_id=rule.id,
                         severidad=Severidad.CORRECTIBLE, valor_original=row["categoria_raw"],
-                        valor_sugerido=candidates, score=match.score,
+                        valor_sugerido=None, score=match.score, candidatos=candidatos,
                     ))
-                    row["ambiguous_candidates"] = candidates
+                    row["ambiguous_candidates"] = ", ".join(candidatos)
                     continue
                 # no_match
                 if row["categoria_norm"] == "":

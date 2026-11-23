@@ -34,6 +34,7 @@ class Hallazgo:
     valor_original: str
     valor_sugerido: str | None = None
     score: float | None = None
+    candidatos: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
